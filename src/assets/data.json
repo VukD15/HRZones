@@ -1,0 +1,37 @@
+[
+  {
+    "id": "5",
+    "zoneStyleCode": "z5",
+    "minPercent": 90,
+    "maxPercent": 100,
+    "zoneDescription": "Heart rate zone 5 is your maximal effort. Your heart and your blood and respiratory system will be working at their maximal capacity. Lactic acid will build up in your blood and after a few minutes you won’t be able to continue at this intensity."
+  },
+  {
+    "id": "4",
+    "zoneStyleCode": "z4",
+    "minPercent": 80,
+    "maxPercent": 90,
+    "zoneDescription": "This is tough. You’ll be breathing hard and working aerobically.\n\nIf you train at this intensity, you’ll improve your speed endurance. Your body will get better at using carbohydrates for energy and you’ll be able to withstand higher levels of lactic acid in your blood for longer."
+  },
+  {
+    "id": "3",
+    "zoneStyleCode": "z3",
+    "minPercent": 70,
+    "maxPercent": 80,
+    "zoneDescription": "Working out in heart rate zone 3 is especially effective for improving the efficiency of blood circulation in the heart and skeletal muscles. This is the zone in which that pesky lactic acid starts building up in your bloodstream."
+  },
+  {
+    "id": "2",
+    "zoneStyleCode": "z2",
+    "minPercent": 60,
+    "maxPercent": 70,
+    "zoneDescription": "This is the zone that improves your general endurance: your body will get better at oxidizing – burning – fat and your muscular fitness will increase along with your capillary density"
+  },
+  {
+    "id": "1",
+    "zoneStyleCode": "z1",
+    "minPercent": 50,
+    "maxPercent": 60,
+    "zoneDescription": "This is the very low intensity zone. Training at this intensity will boost your recovery and get you ready to train in the higher heart rate zones."
+  }
+]
