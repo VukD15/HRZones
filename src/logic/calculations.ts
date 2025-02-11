@@ -7,7 +7,7 @@ export default function CalculateHRZOnes(selectedMethod: string, age: string, re
         }
         default:
             return Array<HRZone>();
-        case "RHR": {
+        case "HRR": {
             return RRHCalculation(parseInt(restHr), parseInt(maxHr));
         }
         case "LTHR": {

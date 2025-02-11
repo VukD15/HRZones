@@ -20,8 +20,9 @@ export default function HRInputArea({selectedMethod, handleZoneCalculation}: HRI
         handleZoneCalculation(results);
     }
 
-    return (<section className='hr-area'>
-        {selectedMethod === "RHR" ?
+    return (
+        <section className='hr-area'>
+            {selectedMethod === "HRR" ?
             <>
                 <InputField label="Rest HR" onChange={setRestHr} fieldValue={restHr}/>
                 <InputField label="Max HR" onChange={setMaxHr} fieldValue={maxHr}/>

@@ -4,6 +4,7 @@ import HRInputArea from "./components/HRInputArea.tsx";
 import ZoneSection from "./components/ZoneSection.tsx";
 import {useState} from "react";
 import {HRZone} from "./logic/HRZone.ts";
+import MethodButton from "./components/MethodButton.tsx";
 
 function App() {
     const [calcMethod, setCalcMethod] = useState("MHR");
@@ -15,11 +16,16 @@ function App() {
 
     function handleCalcMeth(selectedMethod: string) {
         setCalcMethod(selectedMethod);
+        setHrZones([new HRZone("", 0, 0)]);
     }
 
     return (
         <>
-            <ButtonSection selectedButton={calcMethod} handleSelectedCalcMethod={handleCalcMeth}/>
+            <ButtonSection>
+                <MethodButton label={"MHR"} isActive={calcMethod === "MHR"} onCLickAction={handleCalcMeth}/>
+                <MethodButton label={"HRR"} isActive={calcMethod === "HRR"} onCLickAction={handleCalcMeth}/>
+                <MethodButton label={"LTHR"} isActive={calcMethod === "LTHR"} onCLickAction={handleCalcMeth}/>
+            </ButtonSection>
             <HRInputArea selectedMethod={calcMethod} handleZoneCalculation={handleHrZones}/>
             <ZoneSection hrCalcResults={hrZones}/>
         </>

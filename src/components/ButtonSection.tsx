@@ -1,16 +1,13 @@
-import MethodButton from "./MethodButton.tsx";
+import {ReactNode} from "react";
 
 type ButtonSectionProps = {
-    selectedButton: string;
-    handleSelectedCalcMethod: (selectedMethod: string) => void;
+    children: ReactNode;
 }
 
-export default function ButtonSection({selectedButton, handleSelectedCalcMethod}: ButtonSectionProps) {
+export default function ButtonSection({children}: ButtonSectionProps) {
     return (
         <section className='button-section'>
-            <MethodButton label={"MHR"} isActive={selectedButton === "MHR"} onCLickAction={handleSelectedCalcMethod}/>
-            <MethodButton label={"RHR"} isActive={selectedButton === "RHR"} onCLickAction={handleSelectedCalcMethod}/>
-            <MethodButton label={"LTHR"} isActive={selectedButton === "LTHR"} onCLickAction={handleSelectedCalcMethod}/>
+            {children}
         </section>
     )
 }
