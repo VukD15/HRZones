@@ -6,7 +6,7 @@ type ButtonSectionProps = {
 
 export default function ButtonSection({children}: ButtonSectionProps) {
     return (
-        <section className='button-section'>
+        <section className="flex place-content-center bg-purple-800 py-3">
             {children}
         </section>
     )

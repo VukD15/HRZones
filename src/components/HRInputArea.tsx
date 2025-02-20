@@ -21,7 +21,7 @@ export default function HRInputArea({selectedMethod, handleZoneCalculation}: HRI
     }
 
     return (
-        <section className='hr-area'>
+        <section className='flex place-content-center bg-purple-700 py-2'>
             {selectedMethod === "HRR" ?
             <>
                 <InputField label="Rest HR" onChange={setRestHr} fieldValue={restHr}/>
@@ -32,6 +32,8 @@ export default function HRInputArea({selectedMethod, handleZoneCalculation}: HRI
                 :
                 <InputField label="Your Age" onChange={setAge} fieldValue={age}/>
         }
-        <button className="calc-btn" onClick={handleHrCalculation}>Calculate Zones</button>
+            <button className="px-20 py-1 bg-neutral-900 mx-3 rounded-xl text-gray-100"
+                    onClick={handleHrCalculation}>Calculate HR Zones
+            </button>
     </section>)
 }

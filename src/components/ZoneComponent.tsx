@@ -21,11 +21,11 @@ export default function ZoneComponent({
                                       }: ZoneComponentProps) {
 
     return (
-        <section id="zone" className={zoneStyleCode}>
+        <section className={`flex grow m-2 min-h-15 place-content-around ${zoneStyleCode}`}>
             <>
                 <ZoneRange zoneName={zoneName} minPercent={minPercent} maxPercent={maxPercent}/>
                 <ZoneCalcResults zoneMin={zoneCalcResults?.zoneMin} zoneMax={zoneCalcResults?.zoneMax}/>
-                <span className="zone-description">
+                <span className="text-gray-100 align-middle border-l-black border-solid border-l-10 p-2 max-w-3xl">
                   <span>{zoneDescription}</span>
             </span>
             </>

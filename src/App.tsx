@@ -1,4 +1,4 @@
-import './App.css'
+import './index.css'
 import ButtonSection from "./components/ButtonSection.tsx";
 import HRInputArea from "./components/HRInputArea.tsx";
 import ZoneSection from "./components/ZoneSection.tsx";

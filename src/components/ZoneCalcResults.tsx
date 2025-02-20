@@ -4,8 +4,8 @@ type CalcResultProps = {
 }
 export default function ZoneCalcResults({zoneMin = 0, zoneMax = 0}: CalcResultProps) {
     return (
-        <section className="zone-results">
-            <h3>{zoneMin} bpm - {zoneMax} bpm</h3>
-        </section>
+        <div className="flex mx-2 place-items-center">
+            <h4 className="text-gray-100 text-xl align-middle">{zoneMin} bpm - {zoneMax} bpm</h4>
+        </div>
     )
 }

@@ -18,7 +18,7 @@ export default function ZoneSection({hrCalcResults}: ZoneSectionProps) {
     const zoneData: ZoneObject[] = data;
 
     return (
-        <section className="zone-section">
+        <section className="flex-col bg-neutral-900 px-0.5 py-0.5 max-h-max">
             {zoneData.map(function (zone: ZoneObject) {
                 return (
                     <ZoneComponent
