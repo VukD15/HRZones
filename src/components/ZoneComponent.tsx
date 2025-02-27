@@ -7,7 +7,7 @@ type ZoneComponentProps = {
 
 export default function ZoneComponent({children, zoneStyleCode}: ZoneComponentProps) {
     return (
-        <section className={`flex grow m-2 min-h-15 place-content-around ${zoneStyleCode}`}>
+        <section className={`flex grow mb-2 min-h-15 ${zoneStyleCode}`}>
             {children}
         </section>
     )

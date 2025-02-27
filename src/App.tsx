@@ -40,7 +40,7 @@ function App() {
                 <MethodButton label={"LTHR"} isActive={calcMethod === "LTHR"} onCLickAction={handleCalcMeth}/>
             </ButtonSection>
             <HRInputArea selectedMethod={calcMethod} handleZoneCalculation={handleHrZones}/>
-            <section className="flex-col bg-neutral-900 px-0.5 py-0.5 max-h-max">
+            <section className="flex-col bg-neutral-900 p-2 max-h-max">
                 {zoneData.map(function (zone: ZoneObject) {
                     return (
                         <ZoneComponent zoneStyleCode={zone.zoneStyleCode}>
