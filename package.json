@@ -1,6 +1,6 @@
 {
-  "name": "hr-zones",
-  "homepage": "https://vukd15.github.io/EnduranceTools",
+  "name": "EnduranceTools",
+  "homepage": "https://vukd15.github.io/HRZones",
   "private": true,
   "version": "0.0.0",
   "type": "module",
